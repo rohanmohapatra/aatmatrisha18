@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="images/favicon.ico" />
+          <title>Aatmatrisha 18 | PES's Annual Techno-Cultural Fest</title>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" media="screen" href="css/style.css">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+          <link href='https://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
+          <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+          <script src="https://use.fontawesome.com/28c030d477.js"></script>
+        
+        <style>
+            * {
+                box-sizing: border-box;
+              }
+                /*
+                Fade content bs-carousel with hero headers
+                Image credits: unsplash.com
+                */
+
+                /********************************/
+                /*       Fade Bs-carousel       */
+                /********************************/
+                .fade-carousel {
+                    position: relative;
+                    height: 100vh;
+                }
+                .fade-carousel .carousel-inner .item {
+                    height: 100vh;
+                }
+                .fade-carousel .carousel-indicators > li {
+                    width: 3px;
+                    height: 3px;
+                    margin: 0 2px;
+                    background-color: white;
+                    opacity: .6;
+                    margin-bottom: 2px;
+                    -webkit-transition: 0.5s all ease-in-out .1s;
+                       -moz-transition: 0.5s all ease-in-out .1s; 
+                        -ms-transition: 0.5s all ease-in-out .1s; 
+                         -o-transition: 0.5s all ease-in-out .1s; 
+                            transition: 0.5s all ease-in-out .1s;
+                }
+                .fade-carousel .carousel-indicators > li.active {
+                  width: 7px;
+                  height: 7px;
+                  background-color: white;
+                  border-color: white;
+                  opacity: 1;
+                  margin: 0 2px;
+                  -webkit-transition: 0.5s all ease-in-out .1s;
+                       -moz-transition: 0.5s all ease-in-out .1s; 
+                        -ms-transition: 0.5s all ease-in-out .1s; 
+                         -o-transition: 0.5s all ease-in-out .1s; 
+                            transition: 0.5s all ease-in-out .1s;    
+                }
+                /********************************/
+                /*          Heading             */
+                /********************************/
+                .heading-container
+                {
+                    width: 100%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    z-index: 3;
+                    color: #fff;
+                    text-align: center;
+                    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+                      -webkit-transform: translate3d(-50%,-50%,0);
+                         -moz-transform: translate3d(-50%,-50%,0);
+                          -ms-transform: translate3d(-50%,-50%,0);
+                           -o-transform: translate3d(-50%,-50%,0);
+                              transform: translate3d(-50%,-50%,0);
+                }
+                .heading h6
+                {
+                    font-size: 6em;    
+                    font-family: 'Roboto Condensed', sans-serif;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    margin: 0;
+                    padding: 0;
+                }
+                .logo
+                {
+                    height: 90px;
+                    position: absolute;
+                    top: 11%;
+                    left: 5%;
+
+                    transform: translate(-50%, -50%);
+                     z-index: 1;
+                    -webkit-filter: drop-shadow(5px 5px 5px #222); 
+                    filter: drop-shadow(5px 5px 5px #222);
+                }
+                /********************************/
+                /*          Hero Headers        */
+                /********************************/
+                .hero {
+                    position: absolute;
+                    top: 90%;
+                    left: 50%;
+                    z-index: 3;
+                    color: #fff;
+                    text-align: center;
+                    text-transform: uppercase;
+                    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+                      -webkit-transform: translate3d(-50%,-50%,0);
+                         -moz-transform: translate3d(-50%,-50%,0);
+                          -ms-transform: translate3d(-50%,-50%,0);
+                           -o-transform: translate3d(-50%,-50%,0);
+                              transform: translate3d(-50%,-50%,0);
+                }
+                .hero h1 {
+                    font-size: 3em;    
+                    font-weight: bold;
+                    margin: 0;
+                    padding: 0;
+                }
+                .hero h3 {
+                    font-size: 1em;    
+                    font-weight: bold;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                .fade-carousel .carousel-inner .item .hero {
+                    opacity: 0;
+                    -webkit-transition: 2s all ease-in-out .1s;
+                       -moz-transition: 2s all ease-in-out .1s; 
+                        -ms-transition: 2s all ease-in-out .1s; 
+                         -o-transition: 2s all ease-in-out .1s; 
+                            transition: 2s all ease-in-out .1s; 
+                }
+                .fade-carousel .carousel-inner .item.active .hero {
+                    opacity: 1;
+                    -webkit-transition: 2s all ease-in-out .1s;
+                       -moz-transition: 2s all ease-in-out .1s; 
+                        -ms-transition: 2s all ease-in-out .1s; 
+                         -o-transition: 2s all ease-in-out .1s; 
+                            transition: 2s all ease-in-out .1s;    
+                }
+
+                /********************************/
+                /*            Overlay           */
+                /********************************/
+                .overlay {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 2;
+                    background-color: #080d15;
+                    opacity: 0.6;
+                }
+
+                /********************************/
+                /*          Custom Buttons      */
+                /********************************/
+                .btn.btn-lg {padding: 10px 40px;}
+                .btn.btn-hero,
+                .btn.btn-hero:hover,
+                .btn.btn-hero:focus {
+                    color: #f5f5f5;
+                    background-color: #1abc9c;
+                    border-color: #1abc9c;
+                    outline: none;
+                    margin: 20px auto;
+                }
+                /********************************/
+                /*       Rotating Square        */
+                /********************************/
+                /*.loader{
+                  position: absolute;
+                  top: 42%;
+                  left: 76%;
+                  z-index: 3;
+                     -webkit-transform: translate3d(-50%,-50%,0);
+                        -moz-transform: translate3d(-50%,-50%,0);
+                         -ms-transform: translate3d(-50%,-50%,0);
+                          -o-transform: translate3d(-50%,-50%,0);
+                             transform: translate3d(-50%,-50%,0);
+                  background-color: white;
+                  width:15px;
+                  height:15px;
+                  -webkit-animation:rescale 6s infinite;
+                  animation: rescale 6s infinite;
+                }*/
+
+                @-webkit-keyframes rescale{
+                  0% {transform:rotate(0deg);}
+                  10% {transform:rotate(36deg);}
+                  20% {transform:rotate(72deg);}
+                  30% {transform:rotate(108deg);}
+                  40% {transform:rotate(144deg);}
+                  50% {transform:rotate(180deg);}
+                  60% {transform:rotate(216deg);}
+                  70% {transform:rotate(252deg);}
+                  80% {transform:rotate(288deg);}
+                  90% {transform:rotate(334deg);}
+                  100% {transform:rotate(360deg);}
+                }
+
+                @keyframes rescale{
+                  0% {transform:rotate(0deg);}
+                  10% {transform:rotate(36deg);}
+                  20% {transform:rotate(72deg);}
+                  30% {transform:rotate(108deg);}
+                  40% {transform:rotate(144deg);}
+                  50% {transform:rotate(180deg);}
+                  60% {transform:rotate(216deg);}
+                  70% {transform:rotate(252deg);}
+                  80% {transform:rotate(288deg);}
+                  90% {transform:rotate(334deg);}
+                  100% {transform:rotate(360deg);}
+                } 
+                          
+            
+                /********************************/
+                /*       Slides backgrounds     */
+                /********************************/
+                .fade-carousel .slides .slide-1, 
+                .fade-carousel .slides .slide-2,
+                .fade-carousel .slides .slide-3,
+                .fade-carousel .slides .slide-4,
+                .fade-carousel .slides .slide-5
+                {
+                  height: 100%;
+                  background-size: cover;
+                  background-position: center center;
+                  background-repeat: no-repeat;
+                }
+                .fade-carousel .slides .slide-1 {
+                  background-image: linear-gradient(to bottom, rgba(0,0,1,0) 40%, rgba(0,0,0,0.6) 100%),
+                linear-gradient(to bottom, rgba(0, 101, 115, 0.5) 0, rgba(0, 142, 115, 1) 100%),url(1.jpg); 
+                }
+                .fade-carousel .slides .slide-2 {
+                  background-image: linear-gradient(to bottom, rgba(0,0,1,0) 40%, rgba(0,0,0,0.6) 100%),
+                linear-gradient(to bottom, rgba(0, 101, 115, 0.5) 0, rgba(0, 142, 115, 1) 100%),url(2.jpg);
+                }
+                .fade-carousel .slides .slide-3 {
+                  background-image: linear-gradient(to bottom, rgba(0,0,1,0) 40%, rgba(0,0,0,0.6) 100%),
+                linear-gradient(to bottom, rgba(0, 101, 115, 0.5) 0, rgba(0, 142, 115, 1) 100%),url(3.jpg);
+                }
+                .fade-carousel .slides .slide-4 {
+                  background-image: linear-gradient(to bottom, rgba(0,0,1,0) 40%, rgba(0,0,0,0.6) 100%),
+                linear-gradient(to bottom, rgba(0, 101, 115, 0.5) 0, rgba(0, 142, 115, 1) 100%),url(4.jpg);
+                }
+                .fade-carousel .slides .slide-5 {
+                  background-image: linear-gradient(to bottom, rgba(0,0,1,0) 40%, rgba(0,0,0,0.6) 100%),
+                linear-gradient(to bottom, rgba(0, 101, 115, 0.5) 0, rgba(0, 142, 115, 1) 100%),url(5.jpg);
+                }
+
+                /********************************/
+                /*          Media Queries       */
+                /********************************/
+                @media screen and (min-width: 980px){
+                    .hero { width: 980px; }    
+                }
+                @media screen and (max-width: 640px){
+                    .hero h1 { font-size: 4em; }    
+                }
+                /********************************/
+                /*            Icons             */
+                /********************************/
+                .icon{
+                    position: absolute;
+                    top: 1%;
+                    left: 95%;
+                    font-size: 25px;
+                    z-index: 1;
+                }
+                .copyright
+                {
+                    position: absolute;
+                    z-index: 1;
+                    top: 79%;
+                    left: 88%;
+                    font-size: 1em;  
+                    height: 30px;
+                    width: 290px;
+                    color: white;
+                    text-align: center;
+                    font-family: 'Roboto Condensed', sans-serif;
+                    -ms-transform: rotate(-90deg); /* IE 9 */
+                    -webkit-transform: rotate(-90deg); /* Safari 3-8 */
+                    transform: rotate(-90deg);
+                }
+                .container
+            {
+                display:inline;
+                top: 0%;
+            }
+        </style>
+    </head>
+    
+<body>
+    
+        <div class="container">
+    <div id="particles-js"></div>
+        <script src="../particles.js"></script>
+        <script src="js/app.js"></script>
+
+        <div class="icon-container"> 
+        <img src="Combined%20logoRGB-white.png" class="logo">
+        <p class="icon"> 
+                
+                <a href="https://www.facebook.com/ATPESU/"><i class="fa fa-facebook" aria-hidden="true" style="color:white;border : 2px solid white;
+                    padding-left: 14px;padding-right: 14px;padding-top: 10px;padding-bottom: 10px; border-radius:50px;margin: 5px;"></i></a><br>
+                <a href="https://www.instagram.com/aatmatrisha17/"><i class="fa fa-instagram" aria-hidden="true" style="color:white;border : 2px solid white;
+                    padding: 10px;border-radius:50px;margin: 5px;"></i></a><br>
+                <a href="https://www.facebook.com/ATPESU/"><i class="fa fa-twitter" aria-hidden="true" style="color:white;border : 2px solid white;
+                    padding: 10px;border-radius:50px;margin: 5px;"></i></a>
+            </p>
+        <p class="copyright">&copy;Aatmatrisha 2018.All rights reserved.</p>
+        </div> 
+        <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="3000" id="bs-carousel">
+          <!-- Overlay -->
+
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#bs-carousel" data-slide-to="1"></li>
+            <li data-target="#bs-carousel" data-slide-to="2"></li>
+            <li data-target="#bs-carousel" data-slide-to="3"></li>
+            <li data-target="#bs-carousel" data-slide-to="4"></li>
+          </ol>
+          <div class="heading-container">
+            <div class="heading">
+                
+                <h6>Under Construction<div class="loader"> </div></h6>
+                <h3>Coming Soon.</h3>
+                <h3>Are you ready?</h3>
+            </div>  
+          </div>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item slides active">
+              <div class="slide-1">
+                  <div class="overlay"></div>
+              </div>
+              <div class="hero">
+                <hgroup>
+                    <h1>Pro-Nite 2017</h1>        
+                    <h3>Charismatic.</h3>
+                </hgroup>
+                <!--<button class="btn btn-hero btn-lg" role="button">See all features</button>-->
+              </div>
+            </div>
+            <div class="item slides">
+              <div class="slide-2">
+                  <div class="overlay"></div>
+              </div>
+              <div class="hero">        
+                <hgroup>
+                    <h1>Vishal Shekhar</h1>        
+                    <h3>Energetic Duo.</h3>
+                </hgroup>       
+                <!--<button class="btn btn-hero btn-lg" role="button">See all features</button>-->
+              </div>
+            </div>
+            <div class="item slides">
+              <div class="slide-3">
+                  <div class="overlay"></div>
+              </div>
+              <div class="hero">        
+                <hgroup>
+                    <h1>Cul-Nite 2017</h1>        
+                    <h3>We love our audience.</h3>
+                </hgroup>
+                <!--<button class="btn btn-hero btn-lg" role="button">See all features</button>-->
+              </div>
+            </div>
+            <div class="item slides">
+              <div class="slide-4">
+                  <div class="overlay"></div>
+              </div>
+              <div class="hero">        
+                <hgroup>
+                    <h1>2 Days</h1>        
+                    <h3>Fun.Frantic.Frolic.</h3>
+                </hgroup>
+                <!--<button class="btn btn-hero btn-lg" role="button">See all features</button>-->
+              </div>
+            </div>
+            <div class="item slides">
+              <div class="slide-5">
+                  <div class="overlay"></div>
+              </div>
+              <div class="hero">        
+                <hgroup>
+                    <h1>Get Ready for some fun!</h1>        
+                    <h3>Stay Tuned.</h3>
+                </hgroup>
+                <!--<button class="btn btn-hero btn-lg" role="button">See all features</button>-->
+              </div>
+            </div>
+          </div> 
+        </div>
+    </div>
+      </body>
