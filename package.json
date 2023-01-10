@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "light-server": "^2.9.1"
+  },
+  "scripts": {
+    "dev": "light-server -s . -p 4000"
+  }
+}
