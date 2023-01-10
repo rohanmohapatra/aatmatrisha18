@@ -1,0 +1,2706 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Start of Head -->
+  <head>
+    <title>Aatmatrisha 18 | PES's Annual Techno-Cultural Fest</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="modal_css.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Varela"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed"
+      rel="stylesheet"
+    />
+    <script src="https://use.fontawesome.com/28c030d477.js"></script>
+
+    <style>
+      #myCarousel {
+        margin-top: -3%;
+      }
+
+      #crosswhite {
+        width: 5%;
+      }
+
+      h1 {
+        font-size: 5em;
+        font-weight: bold;
+      }
+      .carousel-caption {
+        font-family: "Roboto Condensed", sans-serif;
+        text-transform: uppercase;
+        font-weight: bold;
+        position: absolute;
+
+        left: -40%;
+      }
+      .reg_modal {
+        background-color: white;
+        color: black;
+        padding: 2%;
+        font-weight: bold;
+      }
+      .cross:hover {
+        -webkit-animation-name: rotate;
+        -webkit-animation-duration: 0.5s;
+        -webkit-animation-iteration-count: 1;
+        -webkit-animation-timing-function: ease-in-out;
+        -moz-animation-name: rotate;
+        -moz-animation-duration: 0.5s;
+        -moz-animation-iteration-count: 1;
+        -moz-animation-timing-function: ease-in-out;
+        animation-name: rotate;
+        animation-duration: 0.5s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+      }
+      @keyframes rotate {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(180deg);
+        }
+      }
+
+      .big {
+        font-size: 0.5em;
+        line-height: 60px;
+      }
+      .small {
+        line-height: 80px;
+      }
+
+      body {
+        margin: 0;
+      }
+      /*ul{
+					list-style: none;
+					font-size:30px;
+					text-align: center;
+					font-family: 'Roboto-Sans';
+					line-height: 80px;
+
+				}*/
+      .event_list {
+        font-family: "Roboto Condensed", sans-serif;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 5em;
+        text-align: center;
+        outline: none;
+        background-color: transparent;
+        border: 0;
+      }
+      /*li{
+					font-family: 'Roboto Condensed', sans-serif;
+					text-transform: uppercase;
+					font-weight: bold;
+
+				}
+				li > a {
+			    text-decoration: none !important;
+			    color: black !important;
+			}
+				li > a {
+				  position: relative;
+				  color: #000;
+				  text-decoration: none;
+				}
+
+				li > a:hover {
+				  color: #000;
+				  text-decoration: none;
+				}
+				li > a:before {
+				  content: "";
+				  position: absolute;
+				  width: 100%;
+				  height: 3px;
+				  bottom: 0;
+				  left: 0;
+				  background-color: #000;
+				  visibility: hidden;
+				  -webkit-transform: scaleX(0);
+				  transform: scaleX(0);
+				  -webkit-transition: all 0.3s ease-in-out 0s;
+				  transition: all 0.3s ease-in-out 0s;
+				}
+				li > a:hover:before {
+				  visibility: visible;
+				  -webkit-transform: scaleX(1);
+				  transform: scaleX(1);
+				}*/
+
+      #white_logo {
+        margin-top: 0%;
+        margin-right: 2%;
+      }
+
+      .event {
+        position: absolute;
+        margin: 0;
+        background-image: url(AT_Events2-Recovered.png);
+        background-color: white;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+
+        -webkit-animation-name: slideIn;
+        -webkit-animation-duration: 0.6s;
+        animation-name: slideIn;
+        animation-duration: 0.6s;
+      }
+      /*@-webkit-keyframes slideIn {
+				    from {bottom: -9000px; opacity: 0} 
+				    to {bottom: 0; opacity: 1}
+				}
+
+				@keyframes slideIn {
+				    from {bottom: -9000px; opacity: 0}
+				    to {bottom: 0; opacity: 1}
+				}
+				@keyframes backrotate {
+				    from {transform: rotate(0deg);} 
+				    to {transform: rotate(359deg);}
+				}*/
+      @keyframes slideIn {
+        from {
+          margin-top: 100%;
+          height: 300%;
+        }
+
+        to {
+          margin-top: 0%;
+          height: 100%;
+        }
+      }
+
+      .carousel-control {
+        cursor: pointer;
+      }
+      img {
+        cursor: pointer;
+      }
+      /* Media Queries */
+      /* Smaller than standard 960 (devices and browsers) */
+      @media screen and (max-width: 740px) {
+        #myCarousel {
+          margin-top: 35%;
+        }
+        .small {
+          font-size: 30px;
+          /*line-height: 40px;*/
+        }
+        .event_list {
+          font-size: 20px;
+          line-height: 40px;
+        }
+
+        .logo {
+          width: 25%;
+        }
+        #pink_logo {
+          margin-top: 4%;
+        }
+        #crosswhite {
+          width: 10%;
+          margin-top: 5%;
+        }
+        h1 {
+          font-size: 2em;
+          font-weight: bold;
+        }
+        .carousel-caption {
+          position: relative;
+
+          left: 0%;
+        }
+      }
+
+      /* Tablet Portrait size to standard 960 (devices and browsers) */
+      @media only screen and (min-width: 741px) and (max-width: 1080px) {
+        #myCarousel {
+          margin-top: 18%;
+        }
+        ul {
+          font-size: 30px;
+          line-height: 50px;
+        }
+        .logo {
+          width: 18%;
+        }
+        #pink_logo {
+          margin-top: 2%;
+        }
+        .big {
+          font-size: 20px;
+          line-height: 60px;
+        }
+        h1 {
+          font-size: 2em;
+          font-weight: bold;
+        }
+        .carousel-caption {
+          position: relative;
+
+          left: 0%;
+        }
+        #crosswhite {
+          width: 10%;
+          margin-top: 5%;
+        }
+      }
+
+      /* All Mobile Sizes (devices and browser) */
+      /*	@media only screen and (max-width: 767px) {
+					h1{
+					font-size: 2em;
+					font-weight: bold;
+				}
+				.carousel-caption{
+					position: relative;
+
+					left: 0%;
+				}
+				}*/
+
+      /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+      @media only screen and (min-width: 480px) and (max-width: 767px) {
+      }
+
+      /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+      @media only screen and (max-width: 479px) {
+      }
+    </style>
+
+    <!-- Start of JS -->
+  </head>
+  <!-- End of Head -->
+
+  <!-- Start of Body -->
+  <body
+    style="background-image: url('AT_Events.jpg'); width: 100%; height: 100%"
+  >
+    <!-- Event list -->
+
+    <section>
+      <div class="event small" id="e1" style="display: none">
+        <img src="cross.png" class="cross" style="height: 30px; margin: 2%" />
+        <br /><br />
+        <center>
+          <button class="event_list" id="Instinct_Art" onclick="">
+            Instinct Art
+          </button>
+          <br />
+          <button class="event_list" id="Masked_Face" onclick="">
+            Masked Face
+          </button>
+          <br />
+          <button class="event_list" id="Game_Design" onclick="">
+            Game Design
+          </button>
+          <br />
+          <br />
+        </center>
+      </div>
+
+      <div class="event small" id="e2" style="display: none">
+        <img src="cross.png" class="cross" style="height: 30px; margin: 2%" />
+        <br /><br />
+        <center>
+          <button class="event_list" id="Battle_Bands" onclick="" ;>
+            Battle Of Bands
+          </button>
+          <br />
+          <button class="event_list" id="Acoustic_Amalgam" onclick="">
+            Acoustic Amalgam
+          </button>
+          <br />
+          <button class="event_list" id="Solo_Vocals" onclick="">
+            Solo Vocals
+          </button>
+          <br />
+          <button class="event_list" id="Solo_Instrumental" onclick="">
+            Solo Instrumental
+          </button>
+          <br />
+          <button class="event_list" id="Beat_Boxing" onclick="">
+            Beat Boxing
+          </button>
+          <br />
+          <br />
+        </center>
+      </div>
+
+      <div class="event small" id="e3" style="display: none">
+        <img src="cross.png" class="cross" style="height: 30px; margin: 2%" />
+        <br />
+        <center>
+          <button class="event_list" id="Indian_Dance" onclick="">
+            Indian Dance
+          </button>
+          <br />
+          <button class="event_list" id="Western_Dance" onclick="">
+            Western Dance
+          </button>
+          <br />
+          <button class="event_list" id="Street_Dance_1" onclick="">
+            Street Dance (1 Vs 1)
+          </button>
+          <br />
+          <button class="event_list" id="Street_Dance_2" onclick="">
+            Street Dance (2 Vs 2)
+          </button>
+          <br />
+          <button class="event_list" id="Street_Dance_7" onclick="">
+            Street Dance (7 to Smoke)
+          </button>
+          <br />
+          <button class="event_list" id="Duet_Dance" onclick="">
+            Duet Dance
+          </button>
+          <br />
+        </center>
+        <br />
+      </div>
+
+      <div class="event small" id="e4" style="display: none">
+        <img src="cross.png" class="cross" style="height: 30px; margin: 2%" />
+        <br /><br />
+        <center>
+          <button class="event_list" id="Center_Stage" onclick="">
+            Center Stage
+          </button>
+          <br />
+          <button class="event_list" id="Mono_Act" onclick="">Mono Act</button>
+          <br />
+          <button class="event_list" id="Mad_Ads" onclick="">Mad Ads</button>
+          <br />
+          <br />
+        </center>
+      </div>
+
+      <div class="event small" id="e5" style="display: none">
+        <img src="cross.png" class="cross" style="height: 30px; margin: 2%" />
+        <br /><br />
+        <center>
+          <button class="event_list" id="Convergence" onclick="">
+            Convergence
+          </button>
+          <br />
+          <button class="event_list" id="Infinity_Assemble" onclick="">
+            Infinity Assemble
+          </button>
+          <br />
+          <button class="event_list" id="Faction_Master" onclick="">
+            Faction Master
+          </button>
+          <br />
+          <button class="event_list" id="Trace_Route" onclick="">
+            Trace Route
+          </button>
+          <br />
+          <br />
+        </center>
+      </div>
+
+      <div class="event big" id="e6" style="display: none">
+        <img src="cross.png" class="cross" style="height: 30px; margin: 2%" />
+
+        <center>
+          <button class="event_list" id="Roadies" onclick="">Roadies</button>
+          <br />
+          <button class="event_list" id="Hogathon" onclick="">Hogathon</button>
+          <br />
+          <button class="event_list" id="221B_Baker_Street" onclick="">
+            221B Baker Street
+          </button>
+          <br />
+          <button class="event_list" id="CSGO" onclick="">
+            LAN Gaming - CSGO
+          </button>
+          <br />
+          <button class="event_list" id="Futsal" onclick="">
+            Futsal : The New Street Football
+          </button>
+          <br />
+          <button class="event_list" id="FIFA18" onclick="">FIFA 18</button>
+          <br />
+          <button class="event_list" id="Takeshis_Castle" onclick="">
+            Takeshi's Castle
+          </button>
+          <br />
+          <button class="event_list" id="Chaturanga_Chess" onclick="">
+            Chaturanga - Chess
+          </button>
+          <br />
+          <button class="event_list" id="Gully_Cricket" onclick="">
+            Gully Cricket
+          </button>
+          <br />
+          <button class="event_list" id="Superhero_Showdown" onclick="">
+            Superhero Showdown
+          </button>
+          <br />
+          <br />
+        </center>
+      </div>
+
+      <div class="event small" id="e7" style="display: none">
+        <img src="cross.png" class="cross" style="height: 30px; margin: 2%" />
+        <br /><br /><br />
+        <center>
+          <button class="event_list" id="Stare" onclick="">
+            Stare - Photo Exhibition
+          </button>
+          <br />
+          <button class="event_list" id="Shorty" onclick="">
+            Shorty - A Short Film Competition
+          </button>
+          <br />
+          <br />
+        </center>
+      </div>
+
+      <div class="event big" id="e8" style="display: none">
+        <img src="cross.png" class="cross" style="height: 30px; margin: 2%" />
+        <center>
+          <button class="event_list" id="Formal_Quizzes" onclick="">
+            Formal Quizzes
+          </button>
+          <br />
+          <button class="event_list" id="Informal_Quizzes" onclick="">
+            Informal Quizzes
+          </button>
+          <br />
+          <button class="event_list" id="JAM" onclick="">J.A.M</button> <br />
+          <button class="event_list" id="Debate" onclick="">Debate</button>
+          <br />
+          <button class="event_list" id="Spin" onclick="">
+            Spin - A - Tale
+          </button>
+          <br />
+          <button class="event_list" id="Wordpourri" onclick="">
+            Wordpourri
+          </button>
+          <br />
+          <button class="event_list" id="Poetry_Slam" onclick="">
+            Poetry Slam
+          </button>
+          <br />
+          <button class="event_list" id="Cryptic_Crossword" onclick="">
+            Cryptic Crossword
+          </button>
+          <br />
+          <button class="event_list" id="Undeniable_Truth" onclick="">
+            Undeniable Truth
+          </button>
+          <br />
+          <br />
+        </center>
+      </div>
+    </section>
+    <!-- End of event list -->
+
+    <!-- Start of Modals-->
+    <!-- Start of Creative events-->
+    <!-- The Modal -->
+    <div id="Instinct_Art" class="modal_check">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>INSTINCT ART</h2>
+        </div>
+        <div class="modal-body">
+          <p><br /><b>Rules:</b><br /></p>
+
+          <ul>
+            <li>
+              Doublets take on the challenge to express the two hemispheres of
+              contrasting ideas to form a world .
+            </li>
+            <li>Team of 2.</li>
+            <li>While one is blindfolded , the other paints .</li>
+            <li>
+              First member - 5min to decide + 30 min for a black and white
+              painting .
+            </li>
+            <li>
+              Second member - 5min to view the half completed painting and for
+              decision + 30min of coloured painting and completion of the
+              painting.
+            </li>
+            <li>Two contrary topics will be given , on spot .</li>
+            <li><b> Registration fee: 150 per team </b></li>
+          </ul>
+          <br /><b>Prizes worth :</b><br />
+          <ul>
+            <li>Winners- worth 5000/-</li>
+            <li>Runners Up- worth 3000/-</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <input
+            type="button"
+            value="REGISTER NOW"
+            onclick='location.href="https://aatmatrisha18.typeform.com/to/eH8Qn4?event=Instinct%20Art";'
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal content -->
+    <div id="Masked_Face" class="modal_check">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>MASKED FACE</h2>
+        </div>
+        <div class="modal-body">
+          <p><br /><b>Rules:</b><br /></p>
+
+          <ul>
+            <li>A face inspires a poet , a painted face is his poetry.</li>
+            <li>One model + one artist .</li>
+            <li>Time duration of one hour</li>
+            <li>
+              Basic working materials will be provided . They can also be
+              brought by the artist .
+            </li>
+            <li>Topic - on spot</li>
+            <li><b> Registration fee: 150 per team </b></li>
+          </ul>
+          <br /><b>Prizes worth :</b><br />
+          <ul>
+            <li>Winners- worth 3000/-</li>
+            <li>Runners Up- worth 1500/-</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <input
+            type="button"
+            value="REGISTER NOW"
+            onclick='location.href="https://aatmatrisha18.typeform.com/to/eH8Qn4?event=Masked%20Face";'
+          />
+        </div>
+      </div>
+    </div>
+    <!-- Modal content -->
+    <div id="Game_Design" class="modal_check">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>GAME DESIGN</h2>
+        </div>
+        <div class="modal-body">
+          <p><br /><b>Rules:</b><br /></p>
+
+          <ul>
+            <li>
+              Think you know what makes a quality videogame? Get those creative
+              juices flowing and create the videogame of your dreams on paper!
+            </li>
+            <li>
+              Make the rules, design your characters and create a world for them
+              in to live in!
+            </li>
+            <li>Design core gameplay mechanics</li>
+            <li>
+              Design meaningful levels that evoke a sense of progression in the
+              player
+            </li>
+            <li>
+              Design the most fun, creative and innovative game and you shall be
+              rewarded
+            </li>
+            <li><b> Registration fee: 100 per participant </b></li>
+          </ul>
+          <br /><b>Prizes worth :</b><br />
+          <ul>
+            <li>Winners- worth 3000/-</li>
+            <li>Runners Up- worth 1500/-</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <input
+            type="button"
+            value="REGISTER NOW"
+            onclick='location.href="https://aatmatrisha18.typeform.com/to/eH8Qn4?event=Game%20Design";'
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- End of Creative events-->
+
+    <!-- Start of Photography Events-->
+    <!-- Modal content -->
+    <div id="Shorty" class="modal_check">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>SHORTY – A SHORT FILM COMPETITION</h2>
+        </div>
+        <div class="modal-body">
+          <p></p>
+          <p style="font-size: 15px">
+            Rounds – <br />
+            Best submissions will be selected by Pixels Photography Club and
+            displayed.<br />
+            Top 10 photographs will be selected from the exhibition based on
+            votes from the <br />
+            audience and will be scrutinized in the final round by the invited
+            guest photographer. <br />
+            The top two photographs will be chosen for the winner and the
+            runners-up positions.<br />
+
+            <br /><b>Rules &amp; Regulations:</b><br />
+          </p>
+
+          <ul>
+            <li>The photographer retains full copyright of the photograph.</li>
+            <li>Only one entry per participant is allowed.</li>
+            <li>
+              The photograph must be accompanied by an appropriate caption, name
+              of participant, name of college, contact number and email id of
+              the participant.
+            </li>
+            <li>Entries must not be watermarked.</li>
+            <li>
+              Entries must be of higher resolution and be submitted in JPEG
+              format.
+            </li>
+            <li>
+              Post processing is allowed but it must be submitted with the
+              original and all the EXIF details should be intact. Photographs
+              with missing EXIFs will be treated as tampered. [critical EXIF
+              data]
+            </li>
+            <li>
+              Images which are not properly formatted will not be accepted.
+            </li>
+            <li>
+              Entries not complying with the rules and regulations of the
+              contest or those considered inappropriate, copied or offensive
+              will be disqualified from the contest under discretion of the
+              PIXELS crew.
+            </li>
+            <li>
+              Entries must be received latest by the 4th of March 23:55 HOURS to
+              pixels@pes.edu with the subject of the email as STARE 2018 to be
+              eligible to contest.
+            </li>
+            <li>Registration Fee : Free.</li>
+          </ul>
+          <br /><b>Prize Money:</b><br />
+          <ul>
+            <li>Winners - Worth Rs.3000/-</li>
+            <li>Runners Up - Worth Rs.1500/-</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <input
+            type="button"
+            value="REGISTER NOW"
+            onclick="location.href ='https://aatmatrisha18.typeform.com/to/eH8Qn4?event=Stare-A Photo Exhibition';"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div id="Stare" class="modal_check">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>STARE – PHOTO EXHIBITION</h2>
+        </div>
+        <div class="modal-body">
+          <p></p>
+          <p style="font-size: 15px">
+            Rounds – <br />
+            Contestants will have 2 days to film and edit the video. The videos
+            have to be <br />
+            captured entirely on campus on the first day that is the 9th of
+            March. The video<br />
+            must not be over 5mins and will be presented by the contestant to a
+            panel on the<br />
+            second day of the fest that is the 10th. Winner will be decided
+            based on votes <br />
+            by the judges.
+
+            <br /><b>Rules &amp; Regulations:</b><br />
+          </p>
+
+          <ul>
+            <li>
+              Videos can be shot on phone cameras or any other digital camera.
+            </li>
+            <li>
+              Video footage must be captured on the first day of the fest, 9th
+              of March 2018.
+            </li>
+            <li>
+              All of the footage must be captured on spot and no stock footage
+              must be used.
+            </li>
+            <li>
+              Time to edit is given from the first day till 16:00 HOURS (the
+              afternoon) of the second day, the 10th of March 2018.
+            </li>
+            <li>
+              Any editing software may be used and watermarking is not allowed.
+            </li>
+            <li>
+              The video must be under 5 minutes. It must be presented, after
+              editing, to a panel of judges consisting of a guest judge and
+              senior members of Pixels Photography Club.
+            </li>
+            <li>
+              Presentation of the video must be done in person. The panel will
+              be present from 14:00 HOURS to 16:00 HOURS on the 10th of March
+              during which the participants should present the video in the
+              designated room.
+            </li>
+            <li>Any entry after 16:00 HOURS will not be considered.</li>
+            <li>
+              Winners will be decided after reviewing all the entries and the
+              prize will be given on spot.
+            </li>
+            <li>
+              Entries not complying with the rules and regulations of the
+              contest or those considered inappropriate, copied or offensive
+              will be disqualified from the contest under discretion of the
+              PIXELS crew.
+            </li>
+            <li>Registration Fee : Rs.500/-.</li>
+            <li></li>
+          </ul>
+
+          <br /><b>Prize Money:</b><br />
+          <ul>
+            <li>Winners - Worth Rs.3000/-</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <input
+            type="button"
+            value="REGISTER NOW"
+            onclick="location.href ='https://aatmatrisha18.typeform.com/to/eH8Qn4?event=Shorty-A Short Film Competition';"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- End of Photography Events-->
+
+    <!-- Start of Technical Events-->
+
+    <section>
+      <div id="Convergence" class="modal_check">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Convergence</h2>
+          </div>
+          <div class="modal-body">
+            <p></p>
+            <p style="font-size: 15px">
+              A dark force lurks in the shadows.<br />
+              Set out on an epic journey through the realms.<br />
+              Can you be the hero the worlds need?
+            </p>
+
+            <br /><b>Rules &amp; Regulations:</b><br />
+            <ul>
+              <li>Maximum of 3 members.</li>
+              <li>Registration Fee : Rs.50/- per person.</li>
+            </ul>
+            <br /><b>Prize Money:</b><br />
+            <ul>
+              <li>Winners - Worth Rs.5000/-</li>
+              <li>Runners Up - Worth Rs.3000/-</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <input
+              type="button"
+              value="REGISTER NOW"
+              onclick="location.href ='https://aatmatrisha18.typeform.com/to/eH8Qn4?event=Convergence';"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div id="Infinity_Assemble" class="modal_check">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Infinity Assemble!</h2>
+          </div>
+          <div class="modal-body">
+            <p></p>
+            <p style="font-size: 15px">
+              One choice can save the world or destroy it.<br />
+              And that choice is yours.<br />
+              To INFINITY and beyond<br />
+            </p>
+
+            <br /><b>Rules &amp; Regulations:</b><br />
+            <ul>
+              <li>Maximum of 3 members.</li>
+              <li>Registration Fee : Rs.50/- per person.</li>
+            </ul>
+            <br /><b>Prize Money:</b><br />
+            <ul>
+              <li>Winners - Worth Rs.5000/-</li>
+              <li>Runners Up - Worth Rs.3000/-</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <input
+              type="button"
+              value="REGISTER NOW"
+              onclick="location.href ='https://aatmatrisha18.typeform.com/to/eH8Qn4?event=Infinity Assemble';"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div id="Faction_Master" class="modal_check">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Faction Master</h2>
+          </div>
+          <div class="modal-body">
+            <p></p>
+            <p style="font-size: 15px">
+              Five heroes.<br />
+              Five factions.<br />
+              Infinite possibilities.<br />
+              Do you dream of stepping into the shoes of your heroes?<br />
+              Do you wonder who you’re most like?<br />
+              Face a plethora of questions, respond to the given situations and
+              become the Master of your Faction!
+            </p>
+
+            <br /><b>Rules &amp; Regulations:</b><br />
+            <ul>
+              <li>Indiviual Event.</li>
+              <li>Registration Fee : Rs.50/- per person.</li>
+            </ul>
+            <br /><b>Prize Money:</b><br />
+            <ul>
+              <li>Winners - Worth Rs.10000/-</li>
+              <li>Master x5 - Upto Rs.2000/- per master</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <input
+              type="button"
+              value="REGISTER NOW"
+              onclick="location.href ='https://aatmatrisha18.typeform.com/to/eH8Qn4?event=Faction Master';"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div id="Trace_Route" class="modal_check">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Trace Route</h2>
+          </div>
+          <div class="modal-body">
+            <p></p>
+            <p style="font-size: 15px">
+              Code-Blooded? Quick-Witted? Reroute your thinking,<br />
+              or the solution will vanish without a trace! Harness <br />
+              your coding skills and don your thinking caps to gain access
+              <br />
+              to pieces of a puzzle. Solve this, and the treasure is yours!
+            </p>
+
+            <br /><b>Rules &amp; Regulations:</b><br />
+            <ul>
+              <li>Maximum of 3 members.</li>
+              <li>Registration Fee : Rs.50/- per person.</li>
+              <li>
+                Note: it will be helpful for the participants to know basics of
+                any http library, for eg: urllib module for python.
+              </li>
+            </ul>
+            <br /><b>Prize Money:</b><br />
+            <ul>
+              <li>Winners - Worth Rs.3000/-</li>
+              <li>Runners Up - Worth Rs.2000/-</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <input
+              type="button"
+              value="REGISTER NOW"
+              onclick="location.href ='https://aatmatrisha18.typeform.com/to/eH8Qn4?event=Trace Route';"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Technical Events-->
+    <!-- Start of Lit and Quiz Events-->
+
+    <!-- Modal content -->
+    <div id="Formal_Quizzes" class="modal_check">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Formal Quiz</h2>
+        </div>
+        <div class="modal-body">
+          <p><br /><b>Rules &amp; Regulations:</b><br /></p>
+
+          <ul>
+            <li>Maximum of 3 members in a team.</li>
+            <li>Top 8 teams qualify for finals after written prelims.</li>
+            <li>Top 3 teams in the finals get cash prizes and certificates.</li>
+            <li>Registration fee: Rs. 150/- per team.</li>
+          </ul>
+          <br /><b>Prize Money:</b><br />
+          <ul>
+            <li>Winners - Worth Rs.6000/-</li>
+            <li>Runners Up - Worth Rs.4000/-</li>
+            <li>Second Runners Up - Worth Rs.2000/-</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <input
+            type="button"
+            value="REGISTER NOW"
+            onclick='location.href ="https://aatmatrisha18.typeform.com/to/eH8Qn4?event=Formal%20Quizzes";'
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal content -->
+
+    <!-- Modal content -->
+    <div id="Informal_Quizzes" class="modal_check">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Informal Quiz</h2>
+        </div>
+        <div class="modal-body">
+          <p><br /><b>Rules &amp; Regulations:</b><br /></p>
+
+          <ul>
+            <li>Maximum of 2 members in a team.</li>
+            <li>Quiz will be entirely written.</li>
+            <li>Top 2 teams will get cash prizes and certificates.</li>
+            <li>Registration fee: Rs. 100/- per team.</li>
+          </ul>
+          <br /><b>Prize Money:</b><br />
+          <ul>
+            <li>Winners - Worth Rs.3000/-</li>
+            <li>Runners Up - Worth Rs.2000/-</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <input
+            type="button"
+            value="REGISTER NOW"
+            onclick='location.href ="https://aatmatrisha18.typeform.com/to/eH8Qn4?event=Informal%20Quizzes";'
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal content -->
+    <div id="JAM" class="modal_check">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>J.A.M</h2>
+        </div>
+        <div class="modal-body">
+          <p></p>
+          <p style="font-size: 15px">
+            The task is to simply talk for a minute. Just. One. Minute. Piece of
+            cake right? What about if you can’t say, “um”, “like” or even pause
+            for more than half a second. It <br />gets better, anytime you slip
+            up your opponents will snatch up the mic and the spotlight.<br />
+            Get ready for a high intensity challenge where you must keep your
+            reflexes and your words sharp.<br />
+            Give it a shot, it’s Just A Minute!
+          </p>
+
+          <br /><b>Rules &amp; Regulations:</b><br />
+          <ul>
+            <li>Rounds tend to last 2-3 minutes.Individual Event.</li>
+            <li>Participants must speak about a topic given on the spot.</li>
+            <li>
+              Participants other than the speaker can challenge the speaker on
+              points like <br />
+              repetition, deviation, hesitation and grammatical errors. A
+              rejected challenge <br />
+              would result in negative points.
+            </li>
+            <li>
+              The final score is a function of how long a participant spoke
+              combined with their challenge points.
+            </li>
+            <li>Registration fee: Rs. 50/-.</li>
+          </ul>
+          <br /><b>Prize Money:</b><br />
+          <ul>
+            <li>Winners - Worth Rs.3000/-</li>
+            <li>Runners Up - Worth Rs.2000/-</li>
+            <li>Second Runners Up - Worth Rs.1000/-</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <input
+            type="button"
+            value="REGISTER NOW"
+            onclick='location.href="https://aatmatrisha18.typeform.com/to/eH8Qn4?event=JAM";'
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal content -->
+    <div id="Debate" class="modal_check">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Debate</h2>
+        </div>
+        <div class="modal-body">
+          <p></p>
+          <p style="font-size: 15px">
+            Pit yourself against the best in the game in a verbal battle as you
+            argue your stance <br />
+            for or against a given topic. Debate the nuances of a topic in a
+            formal setting while <br />
+            attempting to convince the judges of the merits of your stance. But
+            beware, everything <br />
+            is not what it seems!
+          </p>
+
+          <br /><b>Rules &amp; Regulations:</b><br />
+          <ul>
+            <li>Individual Event.</li>
+            <li>Spread out over 2 days.</li>
+            <li>Parliamentary debates on a topic related to the theme.</li>
+            <li>Registration fee: Rs. 50/-.</li>
+          </ul>
+          <br /><b>Prize Money:</b><br />
+          <ul>
+            <li>Winners - Worth Rs.3000/-</li>
+            <li>Runners Up - Worth Rs.2000/-</li>
+            <li>Second Runners Up - Worth Rs.1000/-</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <input
+            type="button"
+            value="REGISTER NOW"
+            onclick='location.href="https://aatmatrisha18.typeform.com/to/eH8Qn4?event=Debate";'
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal content -->
+    <div id="Spin" class="modal_check">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Spin-a-Tale</h2>
+        </div>
+        <div class="modal-body">
+          <p></p>
+          <p style="font-size: 15px">
+            Anybody can weave their own stories, but how about weaving someone
+            else’s story?<br />
+            In this writing event filled with twists and turns at every corner,
+            come prepared<br />
+            to let your creative juices flow. This is Spin-a-Tale, accept the
+            challenge and step <br />
+            into a Prose-ian Roullette
+          </p>
+
+          <br /><b>Rules &amp; Regulations:</b><br />
+          <ul>
+            <li>Individual Event.</li>
+            <li>Creative writing with a twist.</li>
+            <li>
+              Contestants are given a line to start with and in<br />
+              periodic intervals more unrelated phrases are thrown to them.
+            </li>
+            <li>Registration fee: Rs. 50/-.</li>
+          </ul>
+          <br /><b>Prize Money:</b><br />
+          <ul>
+            <li>Winners - Worth Rs.2000/-</li>
+            <li>Runners Up - Worth Rs.1500/-</li>
+            <li>Second Runners Up - Worth Rs.1000/-</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <input
+            type="button"
+            value="REGISTER NOW"
+            onclick='location.href="https://aatmatrisha18.typeform.com/to/eH8Qn4?event=Spin%20A%20Tale";'
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal content -->
+    <div id="Wordpourri" class="modal_check">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Wordpourri</h2>
+        </div>
+        <div class="modal-body">
+          <p></p>
+          <p style="font-size: 15px">
+            Teams will be faced with several challenges that range from
+            literature to pictionary. <br />
+            A slew of literary challenges await those brave enough to take this
+            on. <br />
+            Come prepared for anything, the pressure in this cabin will be
+            through the roof! <br />
+          </p>
+
+          <br /><b>Rules &amp; Regulations:</b><br />
+          <ul>
+            <li>Maximum of 3 members.</li>
+            <li>Registration fee: Rs. 150/-.</li>
+          </ul>
+          <br /><b>Prize Money:</b><br />
+          <ul>
+            <li>Winners - Worth Rs.4500/-</li>
+            <li>Runners Up - Worth Rs.3000/-</li>
+            <li>Second Runners Up - Worth Rs.1500/-</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <input
+            type="button"
+            value="REGISTER NOW"
+            onclick='location.href="https://aatmatrisha18.typeform.com/to/eH8Qn4?event=Wordpourri";'
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal content -->
+    <div id="Poetry_Slam" class="modal_check">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Poetry Slam</h2>
+        </div>
+        <div class="modal-body">
+          <p></p>
+          <p style="font-size: 15px">
+            If poetry is the music of your soul, then this is your jam. Express
+            and evoke strong <br />
+            emotions through verse. Here’s a chance to perform your pieces in
+            front of an audience, <br />
+            and be heard!<br />
+          </p>
+
+          <br /><b>Rules &amp; Regulations:</b><br />
+          <ul>
+            <li>Indiviual Event.</li>
+            <li>Registration fee: Rs. 50/-.</li>
+          </ul>
+          <br /><b>Prize Money:</b><br />
+          <ul>
+            <li>Winners - Worth Rs.2000/-</li>
+            <li>Runners Up - Worth Rs.1500/-</li>
+            <li>Second Runners Up - Worth Rs.1000/-</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <input
+            type="button"
+            value="REGISTER NOW"
+            onclick='location.href="https://aatmatrisha18.typeform.com/to/eH8Qn4?event=Poetry%20Slam";'
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal content -->
+    <div id="Cryptic_Crossword" class="modal_check">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Cryptic Crossword</h2>
+        </div>
+        <div class="modal-body">
+          <p></p>
+          <p style="font-size: 15px">
+            Here’s a chance to put all those years of seemingly pointless word
+            games, <br />
+            and a brain filled with literary trivia to good use. Be clever-
+            solve this<br />
+            cryptic crossword with nothing but your wit to back you up. May the
+            odds <br />
+            be ever in your favour!
+          </p>
+
+          <br /><b>Rules &amp; Regulations:</b><br />
+          <ul>
+            <li>Maximum of 2 members.</li>
+
+            <li>There will be a prelims and then a 8 team final.</li>
+            <li>Registration fee: Rs. 100/-.</li>
+          </ul>
+          <br /><b>Prize Money:</b><br />
+          <ul>
+            <li>Winners - Worth Rs.2000/-</li>
+            <li>Runners Up - Worth Rs.1500/-</li>
+            <li>Second Runners Up - Worth Rs.1000/-</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <input
+            type="button"
+            value="REGISTER NOW"
+            onclick='location.href="https://aatmatrisha18.typeform.com/to/eH8Qn4?event=Cryptic%20Crossword";'
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal content -->
+    <div id="Undeniable_Truth" class="modal_check">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Undeniable Truth</h2>
+        </div>
+        <div class="modal-body">
+          <p></p>
+          <p style="font-size: 15px">
+            Think you’re a good liar? Think again. Prepare a speech on a topic
+            <br />
+            that’ll be made known to you beforehand, except it’s wholly false.
+            <br />
+            Here’s the catch: you have to hide 5 truths in your speech as pass
+            <br />
+            them off as anything but.
+          </p>
+          <br /><b>Rules &amp; Regulations:</b><br />
+          <ul>
+            <li>Maximum of 2 members.</li>
+
+            <li>Topics are handed out a day in advance.</li>
+            <li>Registration fee: Rs. 100/-.</li>
+          </ul>
+          <br /><b>Prize Money:</b><br />
+          <ul>
+            <li>Winners - Worth Rs.2000/-</li>
+            <li>Runners Up - Worth Rs.1500/-</li>
+            <li>Second Runners Up - Worth Rs.1000/-</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <input
+            type="button"
+            value="REGISTER NOW"
+            onclick='location.href="https://aatmatrisha18.typeform.com/to/eH8Qn4?event=Undeniable%20Truth";'
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- End of Lit and Quiz Events-->
+
+    <!-- Start of Informal Events-->
+    <!-- Modal content -->
+    <div id="Roadies" class="modal_check">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="crosswhite.png" style="width=2%" align="right" />
+          <h2>ROADIES</h2>
+        </div>
+        <div class="modal-body">
+          <p></p>
+          <p style="font-size: 15px">
+            Roadies is back. The season 3 of the blockbuster event last year is
+            set to return with a new objective, gruelling tasks, scandalous vote
+            outs, mind boggling politics but the same old legacy. With captains
+            leading you this time, it will not be about your triumph, but your
+            gang's glory. If you enjoyed all the action last year and you think
+            you have what it takes to be the ultimate Roadie, WAIT NO MORE!!
+            <br />
+            YOUR GANG, YOUR GLORY!
+
+            <br /><b>Rules &amp; Regulations:</b><br />
+            <ul>
+              <li>Rules will be explained on spot.</li>
+              <li>Registration fee: Rs.50 per participant</li>
+            </ul>
+            <br /><b>Prize Money:</b><br />
+          </p>
+
+          <ul>
+            <li>First Place - Worth Rs.7000/-</li>
+            <li>Second Place - Worth Rs.3000/-</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <input
+            type="button"
+            value="REGISTER NOW"
+            onclick='location.href="https://aatmatrisha18.typeform.com/to/eH8Qn4?event=Roadies";'
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal content -->
+    <div id="Hogathon" class="modal_check">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="crosswhite.png" style="width=2%" align="right" />
+          <h2>HOGATHON</h2>
+        </div>
+        <div class="modal-body">
+          <p></p>
+          <p style="font-size: 15px">
+            You think you're a foodie? Well we'll be the judge of that.
+            <br />We don't consider gluttony to be a sin at Aatmatrisha. With so
+            many delicacies on the table, to win this all you have to do here is
+            hog-a-ton!
+
+            <br /><b>Rules &amp; Regulations:</b><br />
+            <ul>
+              <li>Rules will be explained on spot.</li>
+              <li>Registration fee: Rs.50 per participant</li>
+            </ul>
+            <br /><b>Prize Money:</b><br />
+          </p>
+
+          <ul>
+            <li>First Place - Worth Rs.4000/-</li>
+            <li>Second Place - Worth Rs.2000/-</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <input
+            type="button"
+            value="REGISTER NOW"
+            onclick='location.href="https://aatmatrisha18.typeform.com/to/eH8Qn4?event=Hogathon";'
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal content -->
+    <div id="221B_Baker_Street" class="modal_check">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="crosswhite.png" style="width=2%" align="right" />
+          <h2>221B BAKER STREET</h2>
+        </div>
+        <div class="modal-body">
+          <p></p>
+          <p style="font-size: 15px">
+            "The name is Sherlock Holmes and the address is 221B Baker Street."
+
+            <br /><b>Rules &amp; Regulations:</b><br />
+            <ul>
+              <li>Investigate and solve the case.</li>
+              <li>Rules will be explained on spot.</li>
+              <li>Team of two members.</li>
+              <li>Registration fee: Rs.100 per team</li>
+            </ul>
+            <br /><b>Prize Money:</b><br />
+          </p>
+
+          <ul>
+            <li>First Place - Worth Rs.5000/-</li>
+            <li>Second Place - Worth Rs.2000/-</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <input
+            type="button"
+            value="REGISTER NOW"
+            onclick='location.href="https://aatmatrisha18.typeform.com/to/eH8Qn4?event=221B%20Baker%20Street";'
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal content -->
+    <div id="CSGO" class="modal_check">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="crosswhite.png" style="width=2%" align="right" />
+          <h2>LAN GAMING - CSGO</h2>
+        </div>
+        <div class="modal-body">
+          <p></p>
+          <p style="font-size: 15px">
+            <br /><b>Rules &amp; Regulations:</b><br />
+            <ul>
+              <li>Each team must consist of five members.</li>
+              <li>
+                Rounds: There will be preliminaries followed by quarter finals,
+                Semi-finals and then finals.
+              </li>
+              <ul>
+                <li>All the rounds will be knockout rounds.</li>
+                <li>
+                  Which team plays terrorist or counter terrorist will be
+                  decided by a knife round.
+                </li>
+              </ul>
+              <li>Start money for both the team will be set as $800.</li>
+              <li>Friendly fire will be switched on.</li>
+              <li>C4 timer be set to 35 seconds.</li>
+              <li>All forms of scripts and hacks are banned.</li>
+              <li>
+                Organizers' decision will be finals in any kind of dispute.
+              </li>
+              <li>
+                Maps: $1000$,$2000$,de_train,aim headshot, fy_snow and de_dust2.
+              </li>
+              <li>Registration fee: Rs.300 per team.</li>
+            </ul>
+            <br /><b>Prize Money:</b><br />
+          </p>
+
+          <ul>
+            <li>First Place - Worth Rs.3000/-</li>
+            <li>Second Place - Worth Rs.1500/-</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <input
+            type="button"
+            value="REGISTER NOW"
+            onclick='location.href="https://aatmatrisha18.typeform.com/to/eH8Qn4?event=CSGO";'
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal content -->
+    <div id="Futsal" class="modal_check">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="crosswhite.png" style="width=2%" align="right" />
+          <h2>FUTSAL : THE NEW STREET FOOTBALL</h2>
+        </div>
+        <div class="modal-body">
+          <p></p>
+          <p style="font-size: 15px">
+            Our Goal is Stopping Yours!!
+            <br /><b>Rules &amp; Regulations:</b><br />
+            <ul>
+              <li>5 a side (4+1) and 3 substitutes (8 in a team).</li>
+              <li>Rules will be explained by the referee on spot.</li>
+              <li>Proper Kit required: Includes.</li>
+              <ul>
+                <li>Compulsory shorts.</li>
+                <li>Same jersey colour.</li>
+                <li>Football training shoes.</li>
+              </ul>
+              <li>Registration fee: 800 per team.</li>
+            </ul>
+            <br /><b>Prize Money:</b><br />
+          </p>
+
+          <ul>
+            <li>First Place - Worth Rs.8000/-</li>
+            <li>Second Place - Worth Rs.4000/-</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <input
+            type="button"
+            value="REGISTER NOW"
+            onclick='location.href="https://aatmatrisha18.typeform.com/to/eH8Qn4?event= futsal";'
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal content -->
+    <div id="FIFA18" class="modal_check">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="crosswhite.png" style="width=2%" align="right" />
+          <h2>FIFA 18</h2>
+        </div>
+        <div class="modal-body">
+          <p></p>
+          <p style="font-size: 15px">
+            Are your fingers as fast as their legs?
+            <br />Get ready to live the FIFA 18 experience this Aatmatrisha!
+            <br /><b>Rules &amp; Regulations:</b><br />
+            <ul>
+              <li>Half-length: 5 minutes.</li>
+              <li>One-on-One or in Teams of Two.</li>
+              <li>Participants are allowed to get their own controllers.</li>
+              <li>
+                Registration fee: Rs.100 per participant and Rs.150 for a team
+                of two.
+              </li>
+            </ul>
+            <br /><b>Prize Money:</b><br />
+          </p>
+
+          <ul>
+            <li>First Place - Worth Rs.3000/-</li>
+            <li>Second Place - Worth Rs.1500/-</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <input
+            type="button"
+            value="REGISTER NOW"
+            onclick='location.href="https://aatmatrisha18.typeform.com/to/eH8Qn4?event=FIFA";'
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal content -->
+    <div id="Takeshis_Castle" class="modal_check">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="crosswhite.png" style="width=2%" align="right" />
+          <h2>TAKESHI'S CASTLE</h2>
+        </div>
+        <div class="modal-body">
+          <p></p>
+          <p style="font-size: 15px">
+            Had fun watching people trip into mud or bang into walls in
+            childhood? Get ready to witness eccentric fun filled games which
+            will BLOW YOUR MIND with the blessings of Chandra Vibhushan
+            Pandeyji's adhunik gobar!
+            <br /><b>Rules &amp; Regulations:</b><br />
+            <ul>
+              <li>Maximum of 5 rounds.</li>
+              <li>Rules will be explained on-spot.</li>
+              <li>Registration fee: 50 per participant.</li>
+            </ul>
+            <br /><b>Prize Money:</b><br />
+          </p>
+
+          <ul>
+            <li>First Place - Worth Rs.5000/-</li>
+            <li>Second Place - Worth Rs.3000/-</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <input
+            type="button"
+            value="REGISTER NOW"
+            onclick='location.href="https://aatmatrisha18.typeform.com/to/eH8Qn4?event=Takeshi";'
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal content -->
+    <div id="Chaturanga_Chess" class="modal_check">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="crosswhite.png" style="width=2%" align="right" />
+          <h2>CHATURANGA - CHESS</h2>
+        </div>
+        <div class="modal-body">
+          <p></p>
+          <p style="font-size: 15px">
+            Move in silence, only speak when it's time to say CHECKMATE!
+            <br /><b>Rules &amp; Regulations:</b><br />
+            <ul>
+              <li>Time limit - 20 minutes each.</li>
+              <li>Rules will be explained on-spot.</li>
+              <li>Registration fee: 100 per participant.</li>
+            </ul>
+            <br /><b>Prize Money:</b><br />
+          </p>
+
+          <ul>
+            <li>First Place - Worth Rs.3000/-</li>
+            <li>Second Place - Worth Rs.1500/-</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <input
+            type="button"
+            value="REGISTER NOW"
+            onclick='location.href="https://aatmatrisha18.typeform.com/to/eH8Qn4?event=chaturanga";'
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal content -->
+    <div id="Gully_Cricket" class="modal_check">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="crosswhite.png" style="width=2%" align="right" />
+          <h2>GULLY CRICKET</h2>
+        </div>
+        <div class="modal-body">
+          <p></p>
+          <p style="font-size: 15px">
+            If memories of breaking a window puts an evil smirk on your face,
+            come and battle it out on the ground.
+            <br /><b>Rules &amp; Regulations:</b><br />
+            <ul>
+              <li>6 in a team.</li>
+              <li>Participants are required to get their bats.</li>
+              <li>Registration fee: Rs.300 per participant.</li>
+            </ul>
+            <br /><b>Prize Money:</b><br />
+          </p>
+
+          <ul>
+            <li>First Place - Worth Rs.5000/-</li>
+            <li>Second Place - Worth Rs.2000/-</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <input
+            type="button"
+            value="REGISTER NOW"
+            onclick='location.href="https://aatmatrisha18.typeform.com/to/eH8Qn4?event=Gully";'
+          />>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal content -->
+    <div id="Superhero_Showdown" class="modal_check">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="crosswhite.png" style="width=2%" align="right" />
+          <h2>SUPERHERO SHOWDOWN</h2>
+        </div>
+        <div class="modal-body">
+          <p></p>
+          <p style="font-size: 15px">
+            Where do they come from? What do they do?
+            <br />Will they save you or kill you?! <br />Be a superhero and
+            unearth your abilities! <br /><b>Rules &amp; Regulations:</b><br />
+            <ul>
+              <li>Rules will be explained on the spot.</li>
+              <li>Registration fee: Rs.50 per participant.</li>
+            </ul>
+            <br /><b>Prize Money:</b><br />
+          </p>
+
+          <ul>
+            <li>Winners - Rs.2000/- per participant</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <input
+            type="button"
+            value="REGISTER NOW"
+            onclick='location.href="https://aatmatrisha18.typeform.com/to/eH8Qn4?event=superhero";'
+          />>
+        </div>
+      </div>
+    </div>
+
+    <!-- End of Informal Events-->
+
+    <!-- Start of Music Events-->
+    <!-- Modal content -->
+    <div class="modal_check" id="Solo_Vocals">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>SOLO VOCALS</h2>
+        </div>
+        <div class="modal-body">
+          <p></p>
+          <p style="font-size: 15px">
+            <br /><b>Rules &amp; Regulations:</b><br />
+          </p>
+
+          <ul>
+            <li>Time limit: 5+1 minutes.</li>
+            <li>College ID is a must. Pre - Registration is a must.</li>
+            <li>3 Categories: Indian Classical, Western, Bollywood / Film.</li>
+            <li>One accompaniment is allowed but will not be judged.</li>
+            <li>Vulgarity of any form is strictly prohibited.</li>
+            <li>
+              Use of Shruti Box / Taal Maal is allowed. It will not be provided.
+            </li>
+            <li>The decision of the judges will be final.</li>
+            <li>
+              Preliminary to be conducted in the form of video entries mailed to
+              the below address before 25th February-
+              aatmatrishaculturals@gmail.com
+            </li>
+            <li>If there is any accompaniment :Rs. 100 will be charged.</li>
+            <li>Registration fee: Rs. 150/- per participant.</li>
+          </ul>
+          <br /><b>Prize Money:</b><br />
+          <ul>
+            <li>First Prize - Worth Rs.1000/- (each category)</li>
+            <li>Second Prize - Worth Rs.500/- (each category)</li>
+            <li>Third Prize - Certificate</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <input
+            type="button"
+            value="REGISTER NOW"
+            onclick='location.href="https://aatmatrisha18.typeform.com/to/ovdcCF?event=Solo%20Vocals";'
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal content -->
+    <div id="Solo_Instrumental" class="modal_check">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>SOLO INTRUMENTAL</h2>
+        </div>
+        <div class="modal-body">
+          <p></p>
+          <p style="font-size: 15px">
+            <br /><b>Rules &amp; Regulations:</b><br />
+          </p>
+
+          <ul>
+            <li>Time limit: 5+1 minutes.</li>
+            <li>College ID is a must. Pre - Registration is a must.</li>
+            <li>3 Categories: Indian Classical, Western.</li>
+            <li>Vulgarity of any form is strictly prohibited.</li>
+            <li>All equipment to be brought by the individual.</li>
+            <li>A 5-piece drum kit will be provided (for drum solo)</li>
+            <li>The decision of the judges will be final.</li>
+            <li>
+              Preliminary to be conducted in the form of video entries mailed to
+              the below address before 25th February-
+              aatmatrishaculturals@gmail.com
+            </li>
+            <li>Registration fee: Rs. 150/- per participant.</li>
+          </ul>
+          <br /><b>Prize Money:</b><br />
+          <ul>
+            <li>First Prize - Worth Rs.1000/- (each category)</li>
+            <li>Second Prize - Worth Rs.500/- (each category)</li>
+            <li>Third Prize - Certificate</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <input
+            type="button"
+            value="REGISTER NOW"
+            onclick='location.href="https://aatmatrisha18.typeform.com/to/ovdcCF?event=Solo%20Instrumental";'
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal content -->
+    <div id="Beat_Boxing" class="modal_check">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>BEAT BOXING</h2>
+        </div>
+        <div class="modal-body">
+          <p></p>
+          <p style="font-size: 15px">
+            <br /><b>Rules &amp; Regulations:</b><br />
+          </p>
+
+          <ul>
+            <li>Time limit: 2 minutes.</li>
+            <li>College ID is a must. Pre - Registration is a must.</li>
+            <li>Vulgarity of any form is strictly prohibited.</li>
+            <li>A mic will be provided.</li>
+            <li>Use of backing track is not allowed.</li>
+
+            <li>The decision of the judges will be final.</li>
+            <li>
+              Preliminary to be conducted in the form of video entries mailed to
+              the below address before 25th February-
+              aatmatrishaculturals@gmail.com
+            </li>
+            <li>Registration fee: Rs. 150/- per participant.</li>
+          </ul>
+          <br /><b>Prize Money:</b><br />
+          <ul>
+            <li>First Prize - Worth Rs. 1000(each category)</li>
+            <li>Second Prize - Worth Rs.500(each category)</li>
+            <li>Third Prize - Certificate</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <input
+            type="button"
+            value="REGISTER NOW"
+            onclick='location.href="https://aatmatrisha18.typeform.com/to/ovdcCF?event=Beat%20Boxing";'
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal content -->
+    <div id="Battle_Bands" class="modal_check">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>BATTLE OF BANDS</h2>
+        </div>
+        <div class="modal-body">
+          <p></p>
+
+          <p style="font-size: 15px">
+            <br /><b>Rules &amp; Regulations:</b><br />
+          </p>
+
+          <ul>
+            <li>Time limit: 12+3 minutes.</li>
+            <li>College ID is a must. Pre - Registration is a must.</li>
+            <li>Maximum of 3 members.</li>
+            <li>One individual cannot play for multiple teams.</li>
+            <li>Vulgarity of any form is strictly prohibited.</li>
+            <li>All equipments to be brought by the teams.</li>
+            <li>A 5-piece drum kit will be provided.</li>
+            <li>Own compositions will have more weightage for scoring.</li>
+            <li>The decision of the judges will be final.</li>
+            <li>
+              Preliminary to be conducted in the form of video entries mailed to
+              the below address before 25th February-
+              aatmatrishaculturals@gmail.com
+            </li>
+            <li>Registration fee: Rs. 1,000/- per team.</li>
+          </ul>
+          <br /><b>Prize Money:</b><br />
+          <ul>
+            <li>Winners - Worth Rs.15000/-</li>
+            <li>Runners Up - Worth Rs.10000/-</li>
+            <li>Second Runners Up - Certificate</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <input
+            type="button"
+            value="REGISTER NOW"
+            onclick='location.href="https://aatmatrisha18.typeform.com/to/ovdcCF?event=Battle%20of%20Bands";'
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal content -->
+    <div id="Acoustic_Amalgam" class="modal_check">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>ACOUSTIC AMALGAM</h2>
+        </div>
+        <div class="modal-body">
+          <p></p>
+
+          <p style="font-size: 15px">
+            <br /><b>Rules &amp; Regulations:</b><br />
+          </p>
+
+          <ul>
+            <li>Time limit: 8+2 minutes.</li>
+            <li>College ID is a must. Pre - Registration is a must.</li>
+            <li>No restriction on genre.</li>
+            <li>Maximum of 6 members.</li>
+            <li>One individual cannot play for multiple teams.</li>
+            <li>Vulgarity of any form is strictly prohibited.</li>
+            <li>All equipments to be brought by the teams.</li>
+            <li>
+              Use of electric bass is allowed. Use of electric guitars is not
+              allowed.
+            </li>
+            <li>
+              Use of electric piano/ keyboard is allowed but it must be on grand
+              piano patch.
+            </li>
+            <li>
+              A 5-piece drum kit will be provided. Processors and pedals are not
+              allowed.
+            </li>
+            <li>Own compositions will have more weightage for scoring.</li>
+            <li>The decision of the judges will be final.</li>
+            <li>
+              Preliminary to be conducted in the form of video entries mailed to
+              the below address before 25th February-
+              aatmatrishaculturals@gmail.com
+            </li>
+            <li>Registration fee: Rs. 600/- per team.</li>
+          </ul>
+          <br /><b>Prize Money:</b><br />
+          <ul>
+            <li>First Place - Worth Rs.6000/-</li>
+            <li>Second Place - Worth Rs.3000/-</li>
+            <li>Second Runner’s Up- Certificate</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <input
+            type="button"
+            value="REGISTER NOW"
+            onclick='location.href="https://aatmatrisha18.typeform.com/to/ovdcCF?event=Acoustic%20Amalgam";'
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- End of Music Events-->
+
+    <!-- Start of Dance Events-->
+    <!-- Modal content -->
+    <div id="Indian_Dance" class="modal_check">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>INDIAN DANCE</h2>
+        </div>
+        <div class="modal-body">
+          <p></p>
+          <p style="font-size: 15px">
+            <br /><b>Rules &amp; Regulations:</b><br />
+          </p>
+
+          <ul>
+            <li>No. of members : 6 - 20</li>
+            <li>Time limit: 6 + 2 minutes.</li>
+            <li>Pre -Registration is a must.</li>
+            <li>
+              Prelims: Teams have to mail a video of the dance at
+              aatmatrishaculturals@gmail.com. The subject of the mail should be
+              “ID_College Name”. The deadline for submission is 25 Feb 2018,
+              11:59 pm. Selected teams will be informed.
+            </li>
+            <li>
+              Vulgarity of any kind is strictly prohibited and may lead to
+              disqualification.
+            </li>
+            <li>
+              Use of water, fire or any inflammable substance i prohibited.
+            </li>
+            <li>
+              Teams must submit their music tracks at least one day before the
+              event in a pen-drive and cd in MP3 format and are requested to
+              keep a backup.
+            </li>
+            <li>The decision of the judges will be final and binding.</li>
+            <li>Submission beforehand one -day.</li>
+
+            <li>Registration Fee : Rs.1000/- per team.</li>
+            <li></li>
+          </ul>
+
+          <br /><b>Prize Money:</b><br />
+          <ul>
+            <li>Winners - Worth Rs.12000/-</li>
+            <li>Runners Up - Worth Rs.3000/-</li>
+            <li>Second Runners Up - Certificate</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <input
+            type="button"
+            value="REGISTER NOW"
+            onclick='location.href="https://aatmatrisha18.typeform.com/to/eH8Qn4?event=superhero";'
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal content -->
+    <div id="Duet_Dance" class="modal_check">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>DUET DANCE</h2>
+        </div>
+        <div class="modal-body">
+          <p></p>
+          <p style="font-size: 15px">
+            <br /><b>Rules &amp; Regulations:</b><br />
+          </p>
+
+          <ul>
+            <li>Time limit: 3 + 1 minutes.</li>
+            <li>
+              Vulgarity of any form is strictly prohibited and may lead to
+              disqualification.
+            </li>
+            <li>Pre -Registration is a must.</li>
+            <li>
+              Use of water, fire or any inflammable substance is prohibited.
+            </li>
+            <li>
+              Teams must submit their music tracks at least one hour before the
+              event in a pen-drive and cd in MP3 format and are requested to
+              keep a backup.
+            </li>
+            <li>The decision of the judges will be final and binding.</li>
+            <li>Registration fee: Rs.200 per team.</li>
+          </ul>
+          <br /><b>Prize Money:</b><br />
+          <ul>
+            <li>Winners - Worth Rs.4000/-</li>
+            <li>Runners Up - Worth Rs. 2000</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <input
+            type="button"
+            value="REGISTER NOW"
+            onclick='location.href="https://aatmatrisha18.typeform.com/to/eH8Qn4?event=superhero";'
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal content -->
+    <div id="Street_Dance_1" class="modal_check">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>STREET DANCE (1 Vs 1 Breaking)</h2>
+        </div>
+        <div class="modal-body">
+          <p></p>
+          <p style="font-size: 15px">
+            <br /><b>Rules &amp; Regulations:</b><br />
+          </p>
+
+          <ul>
+            Round 1 - Cypher
+            <li>
+              Depending on number of participants, there may or may not be a
+              cypher round.
+            </li>
+            <li>Pre -Registration is a must.</li>
+            <li>Top 8 participants will move to the next round.</li>
+
+            <li>Registration fee: Rs.200 per participant.</li>
+            Round 2 - Battles
+            <li>Rules will be explained on spot.</li>
+          </ul>
+          <br /><b>Prize Money:</b><br />
+          <ul>
+            <li>Winners - Worth Rs.3000/-</li>
+            <li>Runners Up - Certificate</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <input
+            type="button"
+            value="REGISTER NOW"
+            onclick='location.href="https://aatmatrisha18.typeform.com/to/eH8Qn4?event=superhero";'
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal content -->
+    <div id="Street_Dance_7" class="modal_check">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>STREET DANCE (7 to Smoke - All Styles)</h2>
+        </div>
+        <div class="modal-body">
+          <p></p>
+          <p style="font-size: 15px">
+            <br /><b>Rules &amp; Regulations:</b><br />
+          </p>
+
+          <ul>
+            Round 1 - Showcase round
+            <li>
+              Depending on number of participants, there may or may not be a
+              Showcase round.
+            </li>
+            <li>Pre -Registration is a must.</li>
+            <li>Top 8 participants will move to the next round.</li>
+
+            Round 2 - Battles
+            <li>Rules will be explained on spot.</li>
+            <li>Registration fee: Rs.200 per participant.</li>
+          </ul>
+          <br /><b>Prize Money:</b><br />
+          <ul>
+            <li>Winners - Worth Rs.3000/-</li>
+            <li>Runners Up - Certificate</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <input
+            type="button"
+            value="REGISTER NOW"
+            onclick='location.href="https://aatmatrisha18.typeform.com/to/eH8Qn4?event=superhero";'
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal content -->
+    <div id="Street_Dance_2" class="modal_check">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>STREET DANCE (2 Vs 2)</h2>
+        </div>
+        <div class="modal-body">
+          <p></p>
+          <p style="font-size: 15px">
+            <br /><b>Rules &amp; Regulations:</b><br />
+          </p>
+
+          <ul>
+            Round 1 - Cypher
+            <li>
+              Each team will be given 3-4 minutes to perform the choreographed
+              sequence.
+            </li>
+            <li>Pre -Registration is a must.</li>
+            <li>
+              Top 8 groups will be selected and they’ll move - to the next
+              round.
+            </li>
+
+            <li>Registration fee: Rs.200 per participant.</li>
+            <li>Round 2 - Battles</li>
+
+            <li>Final battle will go on for 5-20 minutes.</li>
+            <li>Rules will be announced on spot.</li>
+          </ul>
+          <br /><b>Prize Money:</b><br />
+          <ul>
+            <li>Winners - Worth Rs.3000/-</li>
+            <li>Runners Up - Certificate</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <input
+            type="button"
+            value="REGISTER NOW"
+            onclick='location.href="https://aatmatrisha18.typeform.com/to/eH8Qn4?event=superhero";'
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal content -->
+    <div id="Western_Dance" class="modal_check">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>WESTERN DANCE</h2>
+        </div>
+        <div class="modal-body">
+          <p></p>
+          <p style="font-size: 15px">
+            <br /><b>Rules &amp; Regulations:</b><br />
+          </p>
+
+          <ul>
+            <li>No. of members : 6 - 20</li>
+            <li>Time limit: 5 + 2 minutes.</li>
+            <li>Pre -Registration is a must.</li>
+            <li>
+              Prelims: Teams have to mail a video of the dance at
+              aatmatrishaculturals@gmail.com. The subject of the mail should be
+              “WD_College Name”. The deadline for submission is 25 Feb 2018,
+              11:59 pm. Selected teams will be informed.
+            </li>
+            <li>
+              Vulgarity of any kind is strictly prohibited and may lead to
+              disqualification.
+            </li>
+            <li>
+              Use of water, fire or any inflammable substance i prohibited.
+            </li>
+            <li>
+              Teams must submit their music tracks at least one day before the
+              event in a pen-drive and cd in MP3 format and are requested to
+              keep a backup.
+            </li>
+            <li>The decision of the judges will be final and binding.</li>
+
+            <li>Registration Fee : Rs.1000/- per team.</li>
+            <li></li>
+          </ul>
+
+          <br /><b>Prize Money:</b><br />
+          <ul>
+            <li>Winners - Worth Rs.12000/-</li>
+            <li>Runners Up - Worth Rs.3000/-</li>
+            <li>Second Runners Up - Certificate</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <input
+            type="button"
+            value="REGISTER NOW"
+            onclick='location.href="https://aatmatrisha18.typeform.com/to/eH8Qn4?event=superhero";'
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal content -->
+
+    <!-- End of Dance Events-->
+
+    <!-- Start of Theater Events-->
+
+    <!-- Modal content -->
+    <div id="Centre_Stage" class="modal_check">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>CENTRE STAGE</h2>
+        </div>
+        <div class="modal-body">
+          <p></p>
+          <p style="font-size: 15px">
+            <br /><b>Rules &amp; Regulations:</b><br />
+          </p>
+
+          <ul>
+            <li>
+              Time limit : 2+1 minutes. Exceeding the same can lead to
+              disqualification.
+            </li>
+            <li>Language: English, Hindi or Kannada.</li>
+            <li>Mics will not be provided.</li>
+            <li>
+              Use of water, fire, or any inflammable substance is prohibited
+            </li>
+            <li>
+              Teams must submit their sound-track, if any, at least one hour
+              before the event in a pen-drive in MP3 format, and are requested
+              to keep backup.
+            </li>
+            <li>
+              Any props or requirements should be informed prior and approved.
+              Any props we cannot provide should be arranged by the teams.
+            </li>
+            <li>
+              Lighting will be provided. The participant is required to hand in
+              a copy of the script to the event organisers so that lighting can
+              be implemented as per the same.
+            </li>
+            <li>The decision of the judges will be final and binding.</li>
+            <li>Registration Fee : Rs.150/- per contestant.</li>
+          </ul>
+          <br /><b>Prize Money:</b><br />
+          <ul>
+            <li>Winners - Worth Rs.3000/-</li>
+            <li>Runners Up - Worth Rs. 1000</li>
+            <li>Second Runners Up - Certificate</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <input type="button" value="REGISTER NOW" onclick="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal content -->
+    <!-- Modal content -->
+    <div id="Mad_Ads" class="modal_check">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>MAD ADS</h2>
+        </div>
+        <div class="modal-body">
+          <p></p>
+          <p style="font-size: 15px">
+            <br /><b>Rules &amp; Regulations:</b><br />
+          </p>
+
+          <ul>
+            <li>Pre-Registration must be done for participation.</li>
+            <li>No. of members: 6 maximum</li>
+            <li>Time limit:10 minutes.</li>
+            <li>
+              Prelims: Teams have to mail a video of the ad at
+              aatmatrishaculturals@gmail.com . The subject of the mail should be
+              “MA_College Name”. The deadline for submission is 25 Feb 2013,
+              11:59 pm. Selected teams will be informed.
+            </li>
+            <li>
+              Teams have to make a new product name, punch line and advertise
+              the product/ brand given to them.
+            </li>
+            <li>
+              Different forms of expression like a short skit, jingles, slogans,
+              banners or any other innovative form can be incorporated.
+            </li>
+            <li>
+              Each performance will be judged based on their acting, humour,
+              screenplay and overall impact.
+            </li>
+            <li>
+              Vulgarity of any kind is strictly prohibited and may lead to
+              disqualification.
+            </li>
+            <li>
+              Plagiarism of any kind is not allowed and may lead to
+              disqualification.
+            </li>
+            <li>The decision of the judges will be final and binding.</li>
+            <li>
+              Any props or requirements should be informed prior and approved.
+              Any props we cannot provide should be arranged by the teams.
+            </li>
+            <li>Registration Fee : Rs.500/- per contestant.</li>
+          </ul>
+          <br /><b>Prize Money:</b><br />
+          <ul>
+            <li>Winners - Worth Rs.8000/-</li>
+            <li>Runners Up - Worth Rs. 5000</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <input type="button" value="REGISTER NOW" onclick="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal content -->
+    <!-- Modal content -->
+    <div id="Mono_Act" class="modal_check">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>MONO ACTS</h2>
+        </div>
+        <div class="modal-body">
+          <p></p>
+          <p style="font-size: 15px">
+            <br /><b>Rules &amp; Regulations:</b><br />
+          </p>
+
+          <ul>
+            <li>No. of members: 8+2 maximum.</li>
+            <li>
+              Time limit: 20+10 minutes (the additional 10 minutes are provided
+              for prop set-up and production)
+            </li>
+            <li>
+              Language: English, Hindi or Kannada. Suggested theme: Movie
+              Adaptations (It is not mandatory to follow this theme)
+            </li>
+            <li>Microphones will be provided (not individual).</li>
+            <li>
+              Use of water, fire, or any inflammable substance is prohibited
+            </li>
+            <li>
+              Teams must submit their sound-track, if any, at least one hour
+              before the event in a pen-drive in MP3 format, and are requested
+              to keep backup. Live music is permitted, but no amplifiers will be
+              provided.
+            </li>
+            <li>
+              Your team should include members to handle music and lights. A
+              copy of the script with all lighting cues should be submitted at
+              least an hour before the event.
+            </li>
+            <li>Backstage voice-overs or narrations are allowed.</li>
+            <li>
+              Vulgarity of any kind is strictly prohibited and may lead to
+              disqualification.
+            </li>
+            <li>The decision of the judges will be final and binding.</li>
+            <li>
+              Any props or requirements should be informed prior and approved.
+              Any props we cannot provide should be arranged by the teams.
+            </li>
+            <li>Registration Fee : Rs.700/- per team.</li>
+            <li>
+              If the members of the team are interested in attending the
+              workshop, registration should be done separately. An additional
+              registration fee for the workshop will be charged.
+            </li>
+          </ul>
+          <br /><b>Prize Money:</b><br />
+          <ul>
+            <li>Winners - Worth Rs.12000/-</li>
+            <li>Runners Up - Worth Rs. 3000</li>
+            <li>Second Runners Up - Certificate</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <input type="button" value="REGISTER NOW" onclick="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- End of Theater Events-->
+
+    <img
+      src="AT_Logo2.png"
+      class="logo"
+      alt="AT LOGO"
+      id="white_logo"
+      width="10%"
+      ;
+      style="margin-left: 2%"
+    />
+
+    <img
+      src="Logo_Final.png"
+      class="logo"
+      alt="AT LOGO"
+      id="pink_logo"
+      width="10%"
+      ;
+      height="10%"
+      style="margin-top: 2%"
+      align="right"
+    />
+
+    <div class="container">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Start of Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+          <li data-target="#myCarousel" data-slide-to="5"></li>
+          <li data-target="#myCarousel" data-slide-to="6"></li>
+          <li data-target="#myCarousel" data-slide-to="7"></li>
+        </ol>
+        <!-- End of Indicators -->
+
+        <!-- Start of Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active" id="mup1" onclick="moveup(this.id)">
+            <img src="creative.png" alt="Creative" style="width: 100%" />
+            <div class="carousel-caption">
+              <h1>Creative</h1>
+            </div>
+          </div>
+
+          <div class="item" id="mup2" onclick="moveup(this.id)">
+            <img src="music.png" alt="Music" style="width: 100%" />
+            <div class="carousel-caption">
+              <h1>Music</h1>
+            </div>
+          </div>
+
+          <div class="item" id="mup3" onclick="moveup(this.id)">
+            <img src="dance.png" alt="Dance" style="width: 100%" />
+            <div class="carousel-caption">
+              <h1>Dance</h1>
+            </div>
+          </div>
+
+          <div class="item" id="mup4" onclick="moveup(this.id)">
+            <img src="theatre.png" alt="Theatre" style="width: 100%" />
+            <div class="carousel-caption">
+              <h1>Theatre</h1>
+            </div>
+          </div>
+
+          <div class="item" id="mup5" onclick="moveup(this.id)">
+            <img src="tech.png" alt="Technical" style="width: 100%" />
+            <div class="carousel-caption">
+              <h1>Technical</h1>
+            </div>
+          </div>
+
+          <div class="item" id="mup6" onclick="moveup(this.id)">
+            <img src="informals.png" alt="Informals" style="width: 100%" />
+            <div class="carousel-caption">
+              <h1>Informals</h1>
+            </div>
+          </div>
+
+          <div class="item" id="mup7" onclick="moveup(this.id)">
+            <img src="photography.png" alt="Photography" style="width: 100%" />
+            <div class="carousel-caption">
+              <h1>Photography</h1>
+            </div>
+          </div>
+
+          <div class="item" id="mup8" onclick="moveup(this.id)">
+            <img src="lit.png" alt="Lit & Quiz" style="width: 100%" />
+            <div class="carousel-caption">
+              <h1>Lit and Quiz</h1>
+            </div>
+          </div>
+        </div>
+        <!-- End of Wrapper for slides -->
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <script type="text/javascript">
+      function moveup(l) {
+        var x = document.getElementById(l);
+        var car = document.getElementById("myCarousel");
+
+        car.style.display = "none";
+
+        var p = document.getElementById("pink_logo");
+        var w = document.getElementById("white_logo");
+        p.style.display = "none";
+        w.style.display = "none";
+
+        if (x.id == "mup1") {
+          var e1 = document.getElementById("e1");
+          var cross = e1.children[0];
+          e1.style.display = "block";
+          cross.onclick = function () {
+            p.style.display = "inline";
+            w.style.display = "inline";
+            e1.style.display = "none";
+            car.style.display = "block";
+          };
+        }
+
+        if (x.id == "mup2") {
+          var e2 = document.getElementById("e2");
+          var cross = e2.children[0];
+          e2.style.display = "block";
+          cross.onclick = function () {
+            p.style.display = "inline";
+            w.style.display = "inline";
+            e2.style.display = "none";
+            car.style.display = "block";
+            //this.style.zIndex=1;
+          };
+        }
+
+        if (x.id == "mup3") {
+          var a = document.getElementById("e3");
+          var cross = a.children[0];
+          //var cross =document.querySelector(".cross");
+          a.style.display = "block";
+          cross.onclick = function () {
+            a.style.display = "none";
+            p.style.display = "inline";
+            w.style.display = "inline";
+            car.style.display = "block";
+          };
+        }
+
+        if (x.id == "mup4") {
+          var a = document.getElementById("e4");
+          var cross = a.children[0];
+          a.style.display = "block";
+          cross.onclick = function () {
+            a.style.display = "none";
+            p.style.display = "inline";
+            w.style.display = "inline";
+            car.style.display = "block";
+          };
+        }
+
+        if (x.id == "mup5") {
+          var a = document.getElementById("e5");
+          var cross = a.children[0];
+          a.style.display = "block";
+          cross.onclick = function () {
+            a.style.display = "none";
+            p.style.display = "inline";
+            w.style.display = "inline";
+            car.style.display = "block";
+          };
+        }
+
+        if (x.id == "mup6") {
+          var a = document.getElementById("e6");
+          var cross = a.children[0];
+          a.style.display = "block";
+          cross.onclick = function () {
+            a.style.display = "none";
+            p.style.display = "inline";
+            w.style.display = "inline";
+            car.style.display = "block";
+          };
+        }
+
+        if (x.id == "mup7") {
+          var a = document.getElementById("e7");
+          var cross = a.children[0];
+          a.style.display = "block";
+          cross.onclick = function () {
+            a.style.display = "none";
+            p.style.display = "inline";
+            w.style.display = "inline";
+            car.style.display = "block";
+          };
+        }
+
+        if (x.id == "mup8") {
+          var a = document.getElementById("e8");
+          a.style.display = "block";
+          var cross = a.children[0];
+          cross.onclick = function () {
+            a.style.display = "none";
+            p.style.display = "inline";
+            w.style.display = "inline";
+            car.style.display = "block";
+          };
+        }
+      }
+
+      //cross.onclick = function() {
+      //var even=document.querySelector(".event");
+      //even.style.display = "none";
+      //var car=document.getElementById("myCarousel");
+      //car.style.display="inline";
+    </script>
+    <script src="modal.js"></script>
+    <!-- End of JS -->
+  </body>
+  <!-- End of Body -->
+</html>

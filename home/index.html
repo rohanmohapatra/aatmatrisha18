@@ -1,0 +1,575 @@
+<!-- Start of home page -->
+
+<!DOCTYPE html>
+<html>
+  <!-- Start of Head -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Aatmatrisha 18 | PES's Annual Techno-Cultural Fest</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Bangers"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Martel+Sans:200,300,400,800,900);
+      /* open sans font */
+      @import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+      body {
+        margin: 0;
+        overflow-x: hidden;
+        background-blend-mode: color-burn;
+      }
+
+      .fa {
+        padding: 18px;
+        font-size: 20px;
+        width: 19px;
+        height: 20px;
+        text-align: center;
+        text-decoration: none;
+      }
+
+      .fa:hover {
+        opacity: 0.8;
+      }
+      .fa-facebook {
+        background: black;
+        color: white;
+        top: 20%;
+      }
+      .fa-twitter {
+        background: black;
+        color: white;
+        top: 30%;
+      }
+      .fa-instagram {
+        background: black;
+        color: white;
+        top: 40%;
+      }
+
+      .fa-youtube {
+        background: black;
+        color: white;
+        top: 50%;
+      }
+
+      .fa-snapchat {
+        background: black;
+        color: white;
+        top: 60%;
+      }
+
+      /* Style the links inside the sidenav */
+      #mySidenav a {
+        /* Position them relative to the browser window */
+        right: -40px; /* Position them outside of the screen */
+        transition: 0.4s; /* Add transition on hover */
+        padding: 15px; /* 15px padding */
+        width: 80px; /* Set a specific width */
+        text-decoration: none; /* Remove underline */
+        font-size: 20px; /* Increase font size */
+        color: white; /* White text color */
+        border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+        position: fixed;
+      }
+
+      #mySidenav a:hover {
+        right: 0; /* On mouse-over, make the elements appear as they should */
+      }
+      .flex-container {
+        display: flex;
+        justify-content: center;
+      }
+
+      .arrow-left2 {
+        width: 0;
+        height: 0;
+        top: 375%;
+        bottom: 0%;
+        position: absolute;
+        border-right: 775px solid grey;
+        border-left: 775px solid black;
+        border-top: 180px solid transparent;
+        border-bottom: 200px solid black;
+        z-index: -1;
+      }
+
+      #book {
+        color: white;
+        background-color: black;
+        font-size: 2em;
+        font-family: "Bangers", cursive;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        position: absolute;
+        top: 72%;
+        left: 8%;
+        border: 3px solid palevioletred;
+      }
+
+      #book:hover {
+        color: deeppink;
+        background-color: white;
+        font-size: 2em;
+        font-family: "Bangers", cursive;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        position: absolute;
+        top: 72%;
+        left: 8%;
+        border: 3px solid black;
+      }
+      .page-row {
+        display: table-row;
+        height: 1px;
+      }
+
+      .body {
+        margin: 0;
+        font-family: monospace;
+      }
+
+      #SEL {
+        width: 100%;
+        height: 30%;
+      }
+      #img_logo {
+        margin-top: 0.5%;
+        margin-left: 0.5%;
+        height: 5%;
+        width: 5%;
+      }
+      #address {
+        color: darkgrey;
+        position: absolute;
+        top: 430%;
+        left: 5%;
+        font-size: 1.5em;
+        z-index: 2;
+      }
+      #pes {
+        width: 30%;
+        height: 30%;
+        max-width: 100%;
+        height: auto;
+        position: relative;
+        left: 0%;
+        padding-bottom: 10%;
+        margin-left: 10%;
+      }
+
+      #at {
+        margin-right: 13%;
+        width: 30%;
+        height: 30%;
+        max-width: 100%;
+        height: auto;
+        position: relative;
+        left: 0%;
+        padding-bottom: 10%;
+      }
+      h2,
+      h3 {
+        font-family: "Bangers", sans-serif;
+        font-size: 2.5em;
+      }
+      p {
+        font-size: 1.5em;
+        font-size: 100%;
+        text-align: justify;
+        font-family: "Roboto", sans-serif;
+      }
+      #p1 {
+        margin-left: 50%;
+        margin-right: 13%;
+      }
+      #p2 {
+        margin-left: 10%;
+        margin-right: 50%;
+      }
+
+      .container-fluid {
+        position: relative;
+        padding-bottom: 5%;
+      }
+
+      /* Add a black background color to the top navigation */
+      .topnav {
+        background-color: black;
+        overflow: hidden;
+        top: -5%;
+        display: block;
+        margin: 0;
+      }
+
+      /* Style the links inside the navigation bar */
+      .topnav a {
+        float: right;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 20px;
+        padding-right: 38px;
+        padding-left: 38px;
+        text-decoration: none;
+        font-family: "Bangers", cursive;
+        font-size: 18px;
+        margin: auto;
+      }
+
+      /* Change the color of links on hover */
+      .topnav a:hover {
+        background-color: whitesmoke;
+        color: black;
+      }
+
+      /* Add an active class to highlight the current page */
+      .active {
+        background-color: black;
+        color: white;
+      }
+
+      /* Hide the link that should open and close the topnav on small screens */
+      .topnav .icon {
+        display: none;
+      }
+
+      /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      .peslogo {
+        position: fixed;
+        z-index: 10001;
+        top: 90%;
+        right: 1.5%;
+        height: 5%;
+        width: 5%;
+        opacity: 0.5;
+      }
+      /* font awesome icons */
+      @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+      /* open sans font */
+      @import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+      @media screen and (max-width: 640px) {
+        .topnav.responsive {
+          position: relative;
+        }
+        .topnav.responsive a.icon {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+
+        .topnav.responsive a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        /*.topnav  a:not(:first-child) {display: none;}*/
+        .topnav a {
+          display: none;
+        }
+        .topnav a.icon {
+          display: block;
+          float: right;
+        }
+      }
+
+      @media only screen and (max-width: 640px) {
+        .arrow-left {
+          width: 0;
+          height: 0;
+          top: 85%;
+          position: fixed;
+          border-right: 675px solid black;
+          border-left: 675px solid black;
+          border-top: 150px solid transparent;
+          border-bottom: 110px solid black;
+          z-index: 1000;
+        }
+      }
+
+      @media screen and (max-width: 640px) {
+        .text_head {
+          font-size: 120%;
+        }
+        .text {
+          font-size: 80%;
+        }
+        p {
+          font-size: 1em;
+        }
+      }
+
+      @media screen and (max-width: 750px) and (min-width: 641px) {
+        .text_head {
+          font-size: 120%;
+        }
+        .text {
+          font-size: 80%;
+        }
+      }
+
+      @media screen and (max-width: 1024px) and (min-width: 751px) {
+        .text_head {
+          font-size: 120%;
+        }
+        .text {
+          font-size: 80%;
+        }
+      }
+    </style>
+    <!-- End of Style Sheets -->
+  </head>
+  <!-- End of Head -->
+  <body>
+    <!-- start of nav bar-->
+    <div class="topnav" id="myTopnav">
+      <img src="Logo_Final.png" id="img_logo" />
+      <a href="https://Aatmatrisha.pes.edu/#Social Cause">Social Cause</a>
+      <a href="#">Schedule</a>
+      <a href="#">Sponsors</a>
+      <a href="#contactUs">Contact Us</a>
+      <a href="/events">Events</a>
+      <a href="/home" class="active" id="left">Home</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()"
+        >&#9776;</a
+      >
+    </div>
+    <!-- end of nav bar-->
+
+    <!-- Start of Logo -->
+    <center>
+      <img src="SEL.png" id="SEL" />
+    </center>
+    <!-- End of Logo -->
+
+    <br />
+    <input
+      type="button"
+      value="Book Now"
+      id="book"
+      onclick='location.href="https://insider.in/aatmatrisha-presents-shankar-ehsaan-loy-march9-2018/event";'
+    />
+    <!-- Start of Text -->
+    <!--<center>
+			<p style = "font-size:200%;">	Presents	</p>
+			<p id="main_head"> SHANKAR &nbsp;EHSAAN &nbsp;LOY	</p>
+			<br/> <br/>
+			<p style="font-size:200%;">
+				Venue : PES University
+				<br/>
+				Date : Friday, 9th March, 2018
+				<br/>
+				Time : 7 pm onwards
+			</p>
+			<br/>
+			<input type= "button" value="Book Now!" class="concert">
+		</center>-->
+    <!-- End of Text -->
+
+    <!-- Start of Social Media icons-->
+    <div id="mySidenav" class="sidenav" class="flex-container">
+      <a href="http://twitter.com/Aatmatrisha18" class="fa fa-twitter"></a>
+      <a href="http://fb.me/ATPESU" class="fa fa-facebook"></a>
+      <a href="http://instagram.com/aatmatrisha18" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-youtube"></a>
+    </div>
+    .
+    <!--End of Social Media Icons -->
+
+    <!-- Start of About PES Section -->
+    <div class="container-fluid">
+      <img src="PES_Cut.png" style="float: left" id="pes" />
+      <div style="margin-top: 10%">
+        <center>
+          <h2>ABOUT PES</h2>
+        </center>
+        <p id="p1">
+          PES University (formerly known as P.E.S. Institute of Technology) was
+          established as a State Private University under Karnataka Act No. 16
+          of 2013 on November 19, 2013. The University offers Bachelors and
+          Masters Programs in engineering, business management and computer
+          applications. The vision of the University is to create professionally
+          superior and ethically strong global work force. PES University is
+          placed 7th on the list of INDIA'S MOST TRUSTED Educational Institutes
+          (Source: TRA) and is in the list of Top 25 M.Tech colleges in India.
+        </p>
+      </div>
+    </div>
+    <hr style="margin-left: 6%; margin-right: 6%" />
+    <!-- End of About PES Section -->
+
+    <!-- Start of About Us Section -->
+    <br />
+    <br />
+    <div class="container-fluid">
+      <img src="AT_Cut.png" style="float: right" id="at" />
+      <div style="margin-top: 20%">
+        <center>
+          <h2>ABOUT US</h2>
+        </center>
+        <p id="p2">
+          AATMATRISHA,the annual cultural festival of PES University, has grown
+          into being Bengaluru's hottest festival. What sets AATMATRISHA apart
+          from the other festivals is the devotion of the students who work
+          towards it to make it a memorable experience, and their urge to
+          deliver the maximum. AATMATRISHA caters to a huge range of interests,
+          all the way from shows by legends such as Raghu Dixit (2012), Sunidhi
+          Chauhan (2015), Salim-Sulaiman (2016) and Vishal Shekhar (2017)during
+          the "Pro-Nite" down to contests and competitions for students in the
+          technical and cultural field.
+        </p>
+      </div>
+    </div>
+
+    <hr style="margin-left: 6%; margin-right: 6%" />
+    <!-- End of About Us Section -->
+
+    <br /><br /><br />
+    <h3 style="margin-top: 11%; text-align: center" id="contactUs">
+      CONTACT US
+    </h3>
+    <br />
+    <div
+      class="per"
+      style="
+        height: 47%;
+        width: 20%;
+        left: 8%;
+        position: absolute;
+        border: solid black 3px;
+      "
+    >
+      <p
+        style="
+          text-align: center;
+          padding-left: 0%;
+          padding-top: 0%;
+          padding-right: 5%;
+        "
+      >
+        <img src="datta.jpg" height="50%" width="80%" /><br />
+        <span class="heading"> Shridatta </span>
+        <center>
+          <span style="font-size: 1em"> Student Head </span>
+          <br />
+          <span class="heading" style="font-size: 0.65em"> Phone Number </span>
+          <br />
+          7795967459
+        </center>
+      </p>
+    </div>
+    <div
+      class="per"
+      style="
+        height: 47%;
+        width: 20%;
+        left: 36.5%;
+        position: absolute;
+        border: solid black 3px;
+      "
+    >
+      <p
+        style="
+          text-align: center;
+          padding-left: 5%;
+          padding-top: 2%;
+          padding-right: 5%;
+        "
+      >
+        <img src="rishi.jpg" height="50%" width="80%" /><br />
+        <span class="heading"> Rishikesh Raman </span>
+        <center>
+          <span style="font-size: 1em"> Event Manager </span>
+          <br />
+          <span class="heading" style="font-size: 0.65em"> Phone Number </span>
+          <br />
+          8792589848
+        </center>
+      </p>
+    </div>
+    <div
+      class="per"
+      style="
+        height: 47%;
+        width: 20%;
+        left: 65%;
+        position: absolute;
+        border: solid black 3px;
+      "
+    >
+      <p
+        style="
+          text-align: center;
+          padding-left: 5%;
+          padding-top: 2%;
+          padding-right: 5%;
+        "
+      >
+        <img src="aman.jpg" height="50%" width="80%" /><br />
+        <span class="heading"> Aman Anand </span>
+        <center>
+          <span style="font-size: 1em"> Finance and Sales Head </span>
+          <br />
+          <span class="heading" style="font-size: 0.65em"> Phone Number </span>
+          <br />
+          9631805058
+        </center>
+      </p>
+    </div>
+
+    <!-- <footer class="page-row">	-->
+    <div class="flex-container">
+      <div class="arrow-left2" style="margin-top: 18%"></div>
+    </div>
+    <!-- </footer> -->
+    <div id="address">
+      <p>
+        <b>PES University</b><br />
+        100 Feet Ring Road, Banashankari<br />
+        Stage III, Dwaraka Nagar,<br />
+        Banashankari, Bengaluru, Karnataka <br />560085
+      </p>
+    </div>
+    <!-- start of script part-->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+    <!-- start of script part-->
+  </body>
+</html>
